@@ -105,11 +105,14 @@ function calcularPerimetroTriangulo() {
     alert(perimetro);
 }
 function calcularAreaTriangulo() {
+    const inputLado1 = document.getElementById("inputLadoTriangulo1");
+    const inputLado2 = document.getElementById("inputLadoTriangulo2");
     const inputBase = document.getElementById("inputBaseTriangulo");
-    const inputAltura = document.getElementById("inputAlturaTriangulo");
+    const valueLado1 = parseInt(inputLado1.value); 
+    const valueLado2 = parseInt(inputLado2.value);
     const valueBase = parseInt(inputBase.value);
-    const valueAltura = parseInt(inputAltura.value);
-    const area = areaTriangulo(valueBase, valueAltura);
+    const altura = isoceles(valueLado1, valueLado2, valueBase);
+    const area = areaTriangulo(valueBase, altura);
     alert(area);
 }
 function calcularAlturaIsoceles() {
