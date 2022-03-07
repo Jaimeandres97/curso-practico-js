@@ -1,10 +1,3 @@
-const lista1 = [
-    100,
-    200,
-    300,
-    500,
-];
-
 // Promedio
 
 function promedioLista(lista) {
@@ -23,7 +16,6 @@ function promedioLista(lista) {
 }
 
 // Mediana
-const lista2 = [100,200,250,300,4000];
 
 function esPar(numero) {
     if(numero.length % 2 == 0) { 
@@ -49,8 +41,7 @@ function medianaLista(lista) {
 }
 
 // Moda
-   
-const lista3 = [1, 2, 3, 1, 2, 3, 4, 2, 2, 2, 1];
+
 function modaLista(lista) {
     const listaCount = {};
     lista.map( 
@@ -71,6 +62,8 @@ function modaLista(lista) {
     const moda = listaArrayOrdenado[listaArrayOrdenado.length-1];
     return moda;
 }
+
+// HTML
 
 function calcularPromedio() {
     const inputList = document.getElementById("inputPromedio");
