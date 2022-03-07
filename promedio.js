@@ -33,7 +33,7 @@ function esPar(numero) {
     }
 }
 
-function mediana(lista) {
+function medianaLista(lista) {
     // Metodo sort para ordenar la lista
     lista.sort(function(a,b) {
         return a-b;
@@ -49,30 +49,9 @@ function mediana(lista) {
 }
 
 // Moda
-
-    // rear un objeto cuya llave sean los valores el array y los valores el numero de veces que se repiten
-    // const listaCount = {};
-    // lista3.map( 
-    //     function(elemento) {
-    //         if(listaCount[elemento]) {
-    //             listaCount[elemento] += 1;
-    //         } else {
-    //             listaCount[elemento] = 1;
-    //         }
-    //     }
-    // )
-
-    //Convertir elementos de un array en una lista para encontrar el elemento que mas se repite
-    //Organizar elementos del nuevo array de menor a mayor cantidad de apariciones
-    // const lista3ArrayOrdenado = Object.entries(listaCount).sort(
-    //     function (elementoA, elementoB) {
-    //         return elementoA[1] - elementoB[1];
-    //     }
-    // );
-
-    // const moda = lista3ArrayOrdenado[lista3ArrayOrdenado.length-1];    
+   
 const lista3 = [1, 2, 3, 1, 2, 3, 4, 2, 2, 2, 1];
-function moda(lista) {
+function modaLista(lista) {
     const listaCount = {};
     lista.map( 
         function(elemento) {
@@ -92,3 +71,34 @@ function moda(lista) {
     const moda = listaArrayOrdenado[listaArrayOrdenado.length-1];
     return moda;
 }
+
+function calcularPromedio() {
+    const inputList = document.getElementById("inputPromedio");
+    const list = inputList.value;
+    const listNum = list.split(',');
+    const numbers = listNum.map(Number);
+    const promedio = promedioLista(numbers);
+    const resultPromedio = document.getElementById("resultPromedio");
+    return resultPromedio.innerText = "El promedio es: " + promedio;
+}
+
+function calcularMediana() {
+    const inputList = document.getElementById("inputMediana");
+    const list = inputList.value;
+    const listNum = list.split(',');
+    const numbers = listNum.map(Number);
+    const mediana = medianaLista(numbers);
+    const resultMediana = document.getElementById("resultMediana");
+    return resultMediana.innerText = "La mediana es: " + mediana;
+}
+
+function calcularModa() {
+    const inputList = document.getElementById("inputModa");
+    const list = inputList.value;
+    const listNum = list.split(',');
+    const numbers = listNum.map(Number);
+    const moda = modaLista(numbers);
+    const resultModa = document.getElementById("resultModa");
+    return resultModa.innerText = "La moda es: " + moda[0] + " y se repite " + moda[1]+ " veces";
+}
+

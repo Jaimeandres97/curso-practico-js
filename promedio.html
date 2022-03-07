@@ -7,8 +7,40 @@
     <title>Promedio, mediana y moda | Curso practico de JS</title>
 </head>
 <body>
-    <h1>Promedio</h1>
-
+    <h1>Aqui podras calcular el promedio, mediana y moda</h1>
+    <h2>Calcula el promedio</h2>
+    <form>
+        <label for="inputPromedio">
+            Escribe los numeros que quieres calcular: 
+        </label>
+        <input id="inputPromedio" type="text" placeholder="Ej: 1, 2, 3..."/>
+        <button type="button" onclick="calcularPromedio()">
+            Calcular el promedio
+        </button>
+        <p id="resultPromedio"></p>
+    </form>    
+    <h2>Calcula la mediana</h2>
+    <form>
+        <label for="inputMediana">
+            Escribe los numeros que quieres calcular: 
+        </label>
+        <input id="inputMediana" type="text" placeholder="Ej: 1, 2, 3..."/>
+        <button type="button" onclick="calcularMediana()">
+            Calcular la mediana
+        </button>
+        <p id="resultMediana"></p>
+    </form>
+    <h2>Calcula la moda</h2>
+    <form>
+        <label for="inputModa">
+            Escribe los numeros que quieres calcular: 
+        </label>
+        <input id="inputModa" type="text" placeholder="Ej: 1, 2, 3..."/>
+        <button type="button" onclick="calcularModa()">
+            Calcular la moda
+        </button>
+        <p id="resultModa"></p>
+    </form>
     <script src="./promedio.js"></script>
 </body>
 </html>
