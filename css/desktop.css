@@ -1,0 +1,16 @@
+body {
+    padding: 10vw;
+}
+
+.main__title {
+    font-size: 48px;
+}
+
+.main__text {
+    font-size: 36px;
+}
+
+.main__button {
+    font-size: 24px;
+    max-width: 500px;
+}
