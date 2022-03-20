@@ -9,6 +9,7 @@
     --text-field: white;
     --text-title: #95ca3e;
     --button: #F6DF1C;
+    --input: #D6DAD9;
 }
 
 html {
@@ -101,4 +102,63 @@ main {
     width: 100%;
 }
 
+.figures {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
 
+.introduction__header h1 {
+    color: var(--text-title);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.content__square {
+    margin: 24px 0;
+}
+
+.content__square h2, .content__triangle h2, .content__circle h2 {
+    color: var(--text-title);
+}
+
+.figures__form {
+    margin-top: 12px;
+}
+
+.figures__input {
+    background-color: var(--input);
+    border-radius: 4px;
+}
+
+.figures__button {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-field);
+    background-color: var(--text-title);
+    justify-content: center;
+    align-items: center;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.triangle__form {
+    list-style: none;
+    padding: 0;
+}
+
+.triangle__form li {
+    margin-top: 8px;
+}
+
+.content__circle {
+    margin-top: 24px;
+}
