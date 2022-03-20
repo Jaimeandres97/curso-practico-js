@@ -102,7 +102,7 @@ main {
     width: 100%;
 }
 
-.figures {
+.figures, .prom, .discounts {
     display: flex;
     flex-direction: column;
     margin: 24px;
@@ -126,12 +126,12 @@ main {
     margin-top: 12px;
 }
 
-.figures__input {
+.figures__input, .mean__input, .discounts__input {
     background-color: var(--input);
     border-radius: 4px;
 }
 
-.figures__button {
+.figures__button, .mean__button, .button__discounts {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
@@ -144,21 +144,33 @@ main {
     background-color: var(--text-title);
     justify-content: center;
     align-items: center;
-    
     text-transform: uppercase;
     font-weight: bold;
     font-size: 90%;
 }
 
-.triangle__form {
+.triangle__form, .discounts__form {
     list-style: none;
     padding: 0;
 }
 
-.triangle__form li {
+.triangle__form li, .discounts__form li {
     margin-top: 8px;
 }
 
 .content__circle {
     margin-top: 24px;
+}
+
+.prom__mean, .price__discounts {
+    margin-top: 24px;
+}
+
+.prom__mean h2, .prom__mode h2, .prom__median h2, .price__discounts h2, .price__coupons h2 {
+    color: var(--text-title);
+    margin-bottom: 12px;
+}
+
+.result__pop {
+    margin-bottom: 12px;
 }

@@ -5,41 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos | Curso practico de JS</title>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+        rel="stylesheet"
+        href="/css/tablet.css"
+        media="screen and (min-width: 768px)" />
+    <link
+        rel="stylesheet"
+        href="/css/desktop.css"
+        media="screen and (min-width: 1024px)" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>
-            Porcentajes y descuentos
-        </h1>
-        <p>Este es el segundo taller del Curso Practico de JS</p>
+        <nav class="contact__info">
+            <img class="js-logo" src="./img/js-logo.png" alt="JS logo" />
+            <img class="platzi-logo" src="./img/platzi.webp" alt="platzi-logo" />
+            <a class="author" href="https://www.linkedin.com/in/ingjaimemoreno/" target="_blank">@Jaimemoreno97</a>
+        </nav>
     </header>
-    <section>
-        <h2> Calcula el precio a pagar de tus productos con descuento</h2>
-        <form>
-            <label for="inputPrice">Escribe el precio de tu producto</label>
-            <input type="number" id="inputPrice"/>
-            <label for="inputDiscount">Escribe el porcentaje de descuento</label>
-            <input type="number" id="inputDiscount"/>
-            <button type="button" onclick="priceDiscount()">
-                Calcular el precio con descuento
-            </button>
-            <p id="resultP"></p>
-        </form>
-        <h2>Tienes un cupon? Indica que cupon tienes para calcular tu descuento</h2>
-        <form>
-            <label for="inputPriceCupon">Escribe el precio de tu producto</label>
-            <input type="number" id="inputPriceCupon"/>
-            <label for="cuponDiscount">Selecciona tu cupon</label>
-            <select id="cuponDiscount">
-                <option>Oro</option>
-                <option>Plata</option>
-                <option>Bronce</option>
-            </select>
-            <button type="button" onclick="onClickCuponDiscount()">Calcular descuento</button>
-            <p id="resultPCupon"></p>
-        </form>
-    </section>
-
+    <main class="discounts">
+        <section class="introduction__header">
+            <h1>
+                Porcentajes y descuentos
+            </h1>
+            <p>Este es el segundo taller del Curso Practico de JS</p>
+        </section>
+        <section class="price__discounts">
+            <h2> Calcula el precio a pagar de tus productos con descuento</h2>
+            <form>
+                <ul class="discounts__form">
+                    <li>
+                        <label for="inputPrice">Escribe el precio de tu producto</label>
+                        <input class="discounts__input" type="number" id="inputPrice"/>
+                    </li>
+                    <li>
+                        <label for="inputDiscount">Escribe el porcentaje de descuento</label>
+                        <input class="discounts__input" type="number" id="inputDiscount"/>
+                    </li>
+                    </ul>
+                <button class="button__discounts" type="button" onclick="priceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+                <p class="result__pop" id="resultP"></p>
+            </form>
+        </section>
+        <section class="price__coupons">
+            <h2>Tienes un cupon? Indica que cupon tienes para calcular tu descuento</h2>
+            <form>
+                <ul class="discounts__form">
+                    <li>
+                        <label for="inputPriceCupon">Escribe el precio de tu producto</label>
+                        <input class="discounts__input" type="number" id="inputPriceCupon"/>
+                    </li>
+                    <li>
+                        <label for="cuponDiscount">Selecciona tu cupon</label>
+                        <select id="cuponDiscount">
+                            <option>Oro</option>
+                            <option>Plata</option>
+                            <option>Bronce</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="button__discounts" type="button" onclick="onClickCuponDiscount()">Calcular descuento</button>
+                <p id="resultPCupon"></p>
+            </form>
+        </section>
+    </main>
     <script src="./descuentos.js"></script>
 </body>
 </html>
