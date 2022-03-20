@@ -174,3 +174,9 @@ main {
 .result__pop {
     margin-bottom: 12px;
 }
+
+.return__button-img {
+    margin-top: 50px;
+    width: 40px;
+    height: 40px;
+}
