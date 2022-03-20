@@ -7,38 +7,75 @@
     <title>Mini calculdora</title>
     <link rel="stylesheet" href="/css/mobile.css" />
     <link
-      rel="stylesheet"
-      href="/css/tablet.css"
-      media="screen and (min-width: 768px)" />
+        rel="stylesheet"
+        href="/css/tablet.css"
+        media="screen and (min-width: 768px)" />
     <link
-      rel="stylesheet"
-      href="/css/desktop.css"
-      media="screen and (min-width: 1024px)" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Sen&display=swap"
-      rel="stylesheet"/>
+        rel="stylesheet"
+        href="/css/desktop.css"
+        media="screen and (min-width: 1024px)" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="main__title">Bienvenido a tu mini calculadora!</h1>
-    <p class="main__text">Selecciona el cálculo que deseas realizar</p>
-    <ul class="main__options">
-        <li class="main__discounts">
-            <a href="./descuentos.html" class="main__button">
-                Calcula tu descuento según porcentaje
-            </a>
-        </li>
-        <li class="main__areas">
+    <header>
+        <nav class="contact__info">
+            <img class="js-logo" src="./img/js-logo.png" alt="JS logo" />
+            <img class="platzi-logo" src="./img/platzi.webp" alt="platzi-logo" />
+            <a class="author" href="https://www.linkedin.com/in/ingjaimemoreno/" target="_blank">@Jaimemoreno97</a>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <h3 class="main__description">Curso práctico de JavaScript - Platzi</h3>
+            <p class="main__description-detail">En este curso integré JavaScript con HTML, así mismo complementé lo aprendido al darle estilo a las páginas con CSS.
+                Los temas vistos en el curso fueron:
+                <ul class="main__description-detail">
+                    <li>Variable, funciones y sintaxis</li>
+                    <li>Condicionales</li>
+                    <li>Manejo de Arrays</li>
+                    <li>Loops</li>
+                    <li>Objetos</li>
+                    <li>Métodos de recorrido de Arrays</li>
+                </ul>
+                Utiliza los talleres vistos en el curso para realizar tus cálculos!
+            </p>
+            <h1 class="main__title">Bienvenido a tu mini calculadora!</h1>
+            <p class="main__text">Selecciona el cálculo que deseas realizar</p>
+        </section>
+        <section class="button">
             <a href="./figuras.html" class="main__button">
-                Calcula el área de tu figura geométrica
+                <div class="button-img">
+                    <img class="image__button" src="./img/circle.png" alt="Geometric Figure">
+                </div>
+                <div class="button-description">
+                    <p>Taller #1</p>
+                    <h1>Figuras geométricas</h1>
+                    <p>Cálcula el área de un cuadrado, círculo o triángulo y consulta si es isóceles</p>
+                </div>
             </a>
-        </li>
-        <li class="main__prom">
+            <a href="./descuentos.html" class="main__button">
+                <div class="button-img">
+                    <img class="image__button" src="./img/discount.png" alt="Discounts figure">
+                </div>
+                <div class="button-description">
+                    <p>Taller #2</p>
+                    <h1>Precios y descuentos</h1>
+                    <p>Cálculo de precios y descuentos según porcentajes</p>
+                </div>
+            </a>
             <a href="./promedio.html" class="main__button">
-                Calcula el promedio, mediana o moda
+                <div class="button-img">
+                    <img class="image__button" src="./img/price.png" alt="Math figure">
+                </div>
+                <div class="button-description">
+                    <p>Taller #3</p>
+                    <h1>Promedio, moda y mediana</h1>
+                    <p>Cálcula el promedio, moda y mediana de un grupo de números</p>
+                </div>
             </a>
-        </li>
-    </ul>
+        </section>
+    </main>
 </body>
 </html>

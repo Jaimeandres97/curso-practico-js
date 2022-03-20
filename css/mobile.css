@@ -5,88 +5,100 @@
 }
 
 :root {
-    --text-field: #000000;
-    --background: white;
-    --button: #E2F0CB;
+    --background-color: #000000;
+    --text-field: white;
+    --text-title: #95ca3e;
+    --button: #F6DF1C;
 }
 
 html {
-    font-family: 'Sen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
 }
 
-body {
-    background-color: #000000;
-    height: 90vh;
-    margin: 24px 24px;
-    padding: 10vw 10vw;
+header {
+    background-color: #121f3d;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.js-logo {
+    width: 70px;
+    height: 70px;
+    margin: 16px 8px 16px 8px;
+}
+
+.platzi-logo {
+    display: none;
+}
+
+.author {
+    color: var(--text-field);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+main {
     display: grid;
+    margin: 24px;
+}
+
+.main__description {
+    color: var(--text-title);
     text-align: center;
-    border: 0.2rem solid #fff;
-    border-radius: 2rem;
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #ff0000,
-                0 0 0.8rem #ff0000,
-                0 0 2.8rem #ff0000,
-                inset 0 0 1.3rem #ff0000;
+    margin-bottom: 12px;
+}
+
+.main__description-detail {
+    text-align: justify;
+    margin-bottom: 8px;
 }
 
 .main__title {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #ff0000,
-        0 0 82px #ff0000,
-        0 0 92px #ff0000,
-        0 0 102px #ff0000,
-        0 0 151px #ff0000;
-    margin-bottom: 50px;
+    color: var(--text-title);
+    margin: 24px 0 24px;
 }
 
 .main__text {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #ff0000,
-        0 0 82px #ff0000,
-        0 0 92px #ff0000,
-        0 0 102px #ff0000,
-        0 0 151px #ff0000;
-    margin-bottom: 50px
+    margin-bottom: 12px;
 }
 
-.main__options {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    place-items: center;
+.button {
+    margin: 0 -24px;
+    height: fit-content;
 }
 
 .main__button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-radius: 16px;
-    height: 60px;
-    width: 100%;
-    margin-bottom: 16px;
-    background-color: #fff;
-    border: 0.2rem solid #fff;
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #ff0000,
-                0 0 0.8rem #ff0000,
-                0 0 2.8rem #ff0000,
-                inset 0 0 1.3rem #ff0000;
+    border-top: 4px solid var(--background-color);
+    background-color: var(--button);
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
 }
+.image__button {
+    height: 128px;
+    width: 128px;
+    
+}
+
+.button-description {
+    color: var(--background-color);
+    display: grid;
+    padding: 16px 16px;
+    width: 100%;
+}
+
+

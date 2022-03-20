@@ -1,12 +1,17 @@
-.main__title {
-    font-size: 48px;
+.platzi-logo {
+    display: inline-block;
+    height: 40px;
+    width: auto;
 }
 
-.main__text {
+.main__description {
     font-size: 24px;
 }
 
-.main__button {
-    font-size: 20px;
-    max-width: 400px;
+.main__title {
+    font-size: 36px;
+}
+
+.main__text {
+    margin-bottom: 20px;
 }

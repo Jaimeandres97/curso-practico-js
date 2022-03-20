@@ -1,16 +1,51 @@
 body {
-    padding: 10vw;
+    display: grid;
+    grid-template-columns: 100px 1fr;
 }
 
-.main__title {
-    font-size: 48px;
+.contact__info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    align-items: end;
 }
 
-.main__text {
-    font-size: 36px;
+.js-logo {
+    transform: rotate(-90deg);
+    grid-row: 3;
+}
+
+.platzi-logo {
+    transform: rotate(-90deg);
+    grid-row: 2;
+}
+
+.author {
+    transform: rotate(-90deg) ;
+    grid-row: 1;
+}
+
+
+main {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main {
+    margin: 24px;
+    
+}
+
+.button {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .main__button {
-    font-size: 24px;
-    max-width: 500px;
+    height: 33.3vh;
+    border-top: 4px solid #000000;
+    border-left: 4px solid #000000;
 }
